@@ -1,0 +1,178 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #004466, #0077aa);
+    color: white;
+    animation: waterFlow 8s infinite alternate;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+@keyframes waterFlow {
+    from {
+        background: linear-gradient(135deg, #004466, #0077aa);
+    }
+    to {
+        background: linear-gradient(135deg, #0077aa, #004466);
+    }
+}
+
+/* Header */
+header {
+    background-color: #0055cc;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00ccff;
+}
+
+/* Toggle Button */
+#toggle-theme {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #0055cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#toggle-theme:hover {
+    background-color: #003377;
+}
+
+/* Main Sections */
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+    border-bottom: 2px solid white;
+    padding-bottom: 0.5rem;
+}
+
+/* Movie Carousel */
+.movie-carousel {
+    display: flex;
+    overflow-x: scroll;
+    gap: 1rem;
+    padding: 1rem 0;
+}
+
+.movie-carousel img {
+    width: 150px;
+    height: 225px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Search Suggestions */
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.movie-suggestion {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-suggestion img {
+    width: 92px;
+    height: 138px;
+    border-radius: 5px;
+}
+
+.movie-suggestion div {
+    flex: 1;
+    color: #ccc;
+}
+
+.movie-suggestion:hover {
+    transform: scale(1.05);
+}
+
+/* Styling for movie details */
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.movie-details p, .movie-details span {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.remove-button {
+    margin-top: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #0055cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #003377;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #002244;
+    margin-top: 2rem;
+}
